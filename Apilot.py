@@ -462,12 +462,8 @@ class Apilot(Plugin):
                 if chuangyi_data:
                     chuangyi_level = chuangyi_data.get('level', '未知')
                     chuangyi_content = chuangyi_data.get('content', '未知')
-                else:
-                    chuangyi_level = '未知'
-                    chuangyi_content = '未知'
-
-                chuangyi_info = f"👚 穿衣指数: {chuangyi_level} - {chuangyi_content}\n"
-                formatted_output.append(chuangyi_info)
+                    chuangyi_info = f"👚 穿衣指数: {chuangyi_level} - {chuangyi_content}\n"
+                    formatted_output.append(chuangyi_info)
                 # Next 7 hours weather
                 ten_hours_later = dt_object + timedelta(hours=10)
 
